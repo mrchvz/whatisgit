@@ -1,0 +1,70 @@
+# 1 What is Git?
+Distributed Version Control System
+
+# 2
+Git is a free and open source distributed version control system designed to
+handle everything from small to very large projects with speed and efficiency.
+
+#3 Git Objects
+A git repository is actually just a collection of objects, each identified with their own hash.
+When you add a file, you get a hash generated on its contents, and this hash is used to uniquely
+point to that version of a file.
+
+#4 Starting a Repository
+  $ mkdir store
+  $ cd store
+  $ git init (initialize empty git repository)
+
+#5 commit
+  $ git status
+  $ git add
+  $ git commit
+
+#6 What is a branch?
+A branch in Git is simply a lightweight movable pointer to one of these commits.
+Every time you commit, it moves forward automatically.
+master: default branch
+  $ git checkout
+
+# 7 log
+Show te commit logs
+  $ git log
+
+# 8 Cloning
+Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned
+repository, and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch.
+
+# 9 Remote Branches
+
+# 10 Tagging
+Is a reference to a commit
+
+# 11 Rebase
+  $ git Rebase
+Moves all changes to master
+Run all origin/master commits
+Run all commits in the temporary area, one at the time.
+
+# 12 Local Branch Rebase
+
+# 13 History
+
+# 14 Interactive Rebase
+pick, reword, edit, squash, fixup, exec
+
+# 15 Stash
+When you want to record the current state of the working directory and the index, but want to go back to a clean working
+directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+
+# 16 Purging history
+
+# 17 Working Together
+
+# 18 Cherry Pick
+When we need a commit from the development branch in the production branch
+
+# 19 Submododules
+
+# 20 Reflog
+Reference logs, record when the tips of branches and other references were updated in the local repository.
+Reflogs are useful in various Git commands, to specify the old value of a reference. For example, HEAD@{2}
